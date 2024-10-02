@@ -12,19 +12,29 @@ http://www.springframework.org/schema/context
 http://www.springframework.org/schema/context/spring-context.xsd"
 >
 
+	<!--  Bean without p shema -->
+	<!--
 	<bean class="com.springmvc.Student" name="Student1">
-		<property name="studentId">
-			<value>48964</value>
-		</property>
+		<property name="studentId" value="7678" />
 		
-		<property name="studentName">
-			<value>Jaydeep Deshpande</value>
-		</property>
+		<property name="studentName" value="Jaydeep Deshpande" />
 		
-		<property name="studentAddress">
-			<value>Beed</value>
-		</property>
+		<property name="studentAddress" value="BEED" />
 	
 	</bean>
+	
+	<bean class="com.springmvc.Student" name="Student2">
+		<property name="studentId" value="76748" />
+		
+		<property name="studentName" value="John Doe" />
+		
+		<property name="studentAddress" value="Pune" />
+	
+	</bean>
+	-->
+	
+	
+	<bean class="com.springmvc.Student" name="Student1" p:studentId="78" p:studentName="Jaydeep" p:studentAddress="Beed" />
+	<bean class="com.springmvc.Student" name="Student2" p:studentId="67" p:studentName="Jay" p:studentAddress="Beed" />
 
 </beans>
